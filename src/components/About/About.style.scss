@@ -1,0 +1,174 @@
+.about {
+  width: 100%;
+  margin: 200px auto;
+  .about-title {
+    width: 100%;
+    position: relative;
+    text-align: center;
+
+    & h1 {
+      padding: 0px 30px;
+      font-size: 60px;
+      font-weight: 600;
+    }
+    & img {
+      position: absolute;
+      bottom: 0;
+      width: 10rem;
+      z-index: -1;
+    }
+  }
+}
+.about_section {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  .about_left {
+    border-radius: 30px;
+    margin-top: 40px;
+    position: relative;
+    & img {
+      width: 85%;
+      height: 85%;
+      object-fit: contain;
+      mix-blend-mode: lighten;
+    }
+  }
+  .about_right {
+    margin-top: 40px;
+    text-align: initial;
+    .about_text {
+      max-width: 500px;
+    }
+    .about_action {
+      width: clamp(340px, 40vw, 600px);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 20px;
+      background: linear-gradient(135deg, #0d3642 20%, #1b4d5e 100%);
+    }
+
+    .about_action p {
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      padding: 8px 12px;
+      background-color: rgba(8, 41, 52, 0.85);
+      font-weight: 400;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .about_action p:hover {
+      background-color: rgba(8, 41, 52, 1);
+      transform: scale(1.05);
+    }
+  }
+}
+.swiper_container {
+  margin-top: 50px;
+
+  h1 {
+    text-align: center;
+  }
+  .swiper {
+    margin-top: 20px;
+    width: 80%;
+    min-width: 780px;
+    margin: 50px auto;
+  }
+  .mySwiper {
+    position: relative;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+  }
+  .about_swiper {
+    position: relative;
+    width: 100%;
+    min-width: 300px;
+    height: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.4s ease-in-out;
+    &.about_swiper:hover {
+      box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.6);
+      border: 2px solid rgba(255, 255, 255, 0.6);
+    }
+    p {
+      border-radius: 15px;
+      padding: 0px 10px;
+      font-weight: 100;
+      letter-spacing: 1px;
+    }
+    a {
+      font-size: 2rem;
+      color: aqua;
+
+      &:hover {
+        animation: scaleUp 0.3s ease-in-out forwards;
+      }
+
+      &:not(:hover) {
+        animation: scaleDown 0.5s ease-in-out forwards;
+      }
+    }
+    .swiper_text {
+      font-size: 30px;
+      box-shadow: 0px 10px 60px rgba(231, 117, 10, 0.6);
+    }
+
+    @keyframes scaleUp {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.1);
+      }
+    }
+
+    @keyframes scaleDown {
+      from {
+        transform: scale(1.1);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .about_section {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-title h1 {
+    font-size: 40px;
+  }
+  .about_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .about_section {
+    margin: 0px 0px 0px 100px;
+  }
+  .about-title {
+    margin-left: 70px;
+  }
+}
