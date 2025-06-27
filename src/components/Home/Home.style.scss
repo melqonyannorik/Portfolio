@@ -62,7 +62,7 @@ aside {
   }
   .home-img .img-box .img-item img {
     position: absolute;
-    top: 3rem;
+    top: 2rem;
     display: block;
     width: 85%;
     object-fit: cover;
@@ -167,7 +167,7 @@ aside {
 }
 @media screen and (max-width: 900px) {
   aside {
-    margin-left: 80px;
+    margin-left: 60px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -199,14 +199,17 @@ aside {
   .nav.active {
     top: 100px;
   }
-}
-@media screen and (max-width: 530px) {
   aside .home-img .img-box {
-    width: 25vw;
-    height: 25vw;
+    width: 50vw;
+    height: 50vw;
   }
+}
+@media screen and (max-width: 500px) {
   .container_cv {
     flex-direction: column-reverse;
     gap: 30px;
+  }
+  aside {
+    margin-right: 200px;
   }
 }
