@@ -3,7 +3,6 @@ import "../Contact/Contact.style.scss";
 import { IoIosMail } from "react-icons/io";
 import { FaPhoneVolume } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 

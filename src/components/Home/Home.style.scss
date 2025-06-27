@@ -200,3 +200,13 @@ aside {
     top: 100px;
   }
 }
+@media screen and (max-width: 530px) {
+  aside .home-img .img-box {
+    width: 25vw;
+    height: 25vw;
+  }
+  .container_cv {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+}
