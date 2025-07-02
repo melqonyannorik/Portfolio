@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router";
 import { FaAlignJustify } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 const Nav = () => {
-  const [menu, setMenu] = useState(false);
   const [close, setClose] = useState(false);
 
   return (
