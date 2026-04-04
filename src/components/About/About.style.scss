@@ -41,7 +41,6 @@
       max-width: 500px;
     }
     .about_action {
-      width: clamp(340px, 40vw, 600px);
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 15px;

@@ -37,7 +37,7 @@ const Home = () => {
           setIndex((prev) => (prev + 1) % skills.length);
         }
       },
-      isDeleting ? 100 : 200
+      isDeleting ? 100 : 200,
     );
 
     return () => clearTimeout(timeout);
@@ -64,7 +64,7 @@ const Home = () => {
           </h1>
           <div className="container_cv">
             <div className="btn_block">
-              <a href="/Norik Melqonyan CV.pdf" download target="_blank">
+              <a href="/Norik_Melqonyan-CV.pdf" download target="_blank">
                 <button>Download CV</button>
               </a>
             </div>

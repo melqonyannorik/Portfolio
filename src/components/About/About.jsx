@@ -48,12 +48,12 @@ const About = () => {
             </p>
           </div>
           <div className="about_action">
-            <p>Name| Norik Melqonyan</p>
-            <p>City| Armavir</p>
-            <p>Phone| +(374) 77 56 18 06</p>
-            <p>Birthday| 15-12-1995</p>
-            <p>Email| melqonyannorik@gmail.com</p>
-            <p>language| Armenian</p>
+            <p>Name: Norik Melqonyan</p>
+            <p>City: Armavir</p>
+            <p>Phone: +(374) 77 56 18 06</p>
+            <p>Birthday: 15-12-1995</p>
+            <p>Gmail: melqonyannorik30@gmail.com</p>
+            <p>language: Armenian, Russian, English</p>
           </div>
         </div>
       </div>

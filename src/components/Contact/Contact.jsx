@@ -11,6 +11,7 @@ const Contact = () => {
 
   function handleSubmit(e) {
     e.preventDefault();
+    e.target.reset();
     emailjs
       .sendForm("service_0w9h1dk", "template_d6ridk8", form.current, {
         publicKey: "SeeyCysdVJ-5Rxxv8",
@@ -22,7 +23,7 @@ const Contact = () => {
         },
         (error) => {
           console.log("FAILED...", error.text);
-        }
+        },
       );
   }
 
@@ -50,7 +51,7 @@ const Contact = () => {
           <div className="contact-details">
             <div className="contact-detail">
               <IoIosMail />
-              <p>melqonyannorik@gmail.com</p>
+              <p>melqonyannorik30@gmail.com</p>
             </div>
             <div className="contact-detail">
               <FaPhoneVolume />
