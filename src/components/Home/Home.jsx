@@ -11,8 +11,8 @@ const Home = () => {
     "React.js developer",
     "Redux",
     "Git",
-    "Anime Fan",
     "Scss",
+    "Anime Fan",
   ];
 
   const [index, setIndex] = useState(0);
